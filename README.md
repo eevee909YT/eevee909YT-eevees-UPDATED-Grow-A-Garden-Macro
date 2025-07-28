@@ -22,8 +22,9 @@ eevee's UPDATED Grow A Garden Macro has a couple of different features it is cap
 - Multi-alts macroing
 - Fast mode/Slow mode
   
-- **Btw this is just an edited and UPDATED version of Virage's Grow A Garden Macro so full credits to them**
 
 Virage's Discord Server: [https://discord.com/VirageMacros](https://discord.com/invite/BPPSAG8MN5)
 
 eevee's Discord Server: [https://discord.gg/TheUnknownReality](https://discord.gg/5FuGe6GAyr)
+
+- **Btw this is just an edited and UPDATED version of Virage's Grow A Garden Macro so full credits to them**
