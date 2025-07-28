@@ -9,6 +9,10 @@ SetWinDelay, -1
 SetControlDelay, -1
 SetBatchLines, -1   
 
+; === GUI Theme: Black Background, White Font ===
+Gui, Color, Black, Black
+Gui, Font, cWhite s10, Segoe UI
+
 ; globals
 
 global webhookURL
@@ -831,7 +835,7 @@ seedItems := ["Carrot Seed", "Strawberry Seed", "Blueberry Seed", "Orange Tulip 
 gearItems := ["Watering Can", "Trowel", "Recall Wrench", "Basic Sprinkler", "Advanced Sprinkler", "Medium Toy", "Medium Treat"
              , "Godly Sprinkler", "Magnifying Glass", "Tanning Mirror", "Master Sprinkler", "Cleaning Spray", "Favorite Tool", "Harvest Tool", "Friendship Pot", "Levelup Lollipop"]
 
-eggItems := ["Not Working Because Of Shop Update"]
+eggItems := ["Common Egg", "Common Summer Egg", "Rare Summer egg", "Mythical Egg", "Paradise Egg", "Bug Egg"]
 
 cosmeticItems := ["Cosmetic 1", "Cosmetic 2", "Cosmetic 3", "Cosmetic 4", "Cosmetic 5"
              , "Cosmetic 6",  "Cosmetic 7", "Cosmetic 8", "Cosmetic 9"]
@@ -905,7 +909,7 @@ ShowGui:
     Gui, Margin, 10, 10
     Gui, Color, 0x202020
     Gui, Font, s9 cWhite, Segoe UI
-    Gui, Add, Tab, x10 y10 w580 h440 vMyTab, Seeds|Gears|Eggs|Cosmetics|Settings|Credits
+    Gui, Add, Tab, x10 y10 w580 h440 vMyTab, Seed Shop|Gear Shop|Egg Shop|Cosmetic Shop|Settings|Credits
 
     Gui, Tab, 1
     Gui, Font, s9 c90EE90 Bold, Segoe UI
@@ -956,7 +960,7 @@ ShowGui:
 
     Gui, Tab, 3
     Gui, Font, s9 ce87b07 Bold, Segoe UI
-    Gui, Add, GroupBox, x23 y50 w475 h340 ce87b07, Egg Shop
+    Gui, Add, GroupBox, x23 y50 w475 h340 ce87b07, The Eggs are currently NOT WORKING!!
     IniRead, SelectAllEggs, %settingsFile%, Egg, SelectAllEggs, 0
     Gui, Add, Checkbox, % "x50 y90 vSelectAllEggs gHandleSelectAll ce87b07 " . (SelectAllEggs ? "Checked" : ""), Select All Eggs
     Loop, % eggItems.Length() {
